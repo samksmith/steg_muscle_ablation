@@ -71,7 +71,7 @@ for f = 1:nFiles % take each file and measure all relevant parameters
     [note_num, call_length, call_DF, entropy, pk_amp, rms, pk_power] = msr_whole_call(call, samp_rate, threshold, reset, note_starts, note_ends, INI_max);
    
     % Measure attributes of notes. The resulting matrix has notes in a column, variable values in each column.
-    [all_notes_matrix, note_labels] = msr_all_notes(call, samp_rate, note_starts, note_ends);
+    [all_notes_matrix, note_labels] = msr_all_notes_arcL(call, samp_rate, note_starts, note_ends);
 
     % Measure and plot curves.
     [r, var_num] = size(all_notes_matrix);
