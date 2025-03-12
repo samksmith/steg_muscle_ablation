@@ -1,4 +1,4 @@
-function [all_notes_matrix, labels] = msr_all_notes(call, samp_rate, note_starts, note_ends)
+function [all_notes_matrix, labels] = msr_all_notes_arcL(call, samp_rate, note_starts, note_ends)
 
 % [all_notes_matrix, labels] = msr_all_notes(call, samp_rate, note_starts, note_ends)
 
@@ -21,7 +21,7 @@ INI(note_num,1) = 0; % Note that the inter-note interval needs a zero entered fo
 
 % Next look at frequency modulation
 %----------------------------------
-[notes_max_Hz, notes_min_Hz, notes_FM, notes_resid,arcL,chordL] = msr_call_FM(call, samp_rate, 256, 'q', note_starts, note_ends); 
+[notes_max_Hz, notes_min_Hz, notes_FM, notes_resid,arcL,chordL] = msr_call_FM_arcL(call, samp_rate, 256, 'q', note_starts, note_ends); 
 % dimensions of notes_FM are 1r x 3c if quadratic function -- which is default.
 
 [notes_DF] = msr_note_DFs(call, note_starts, note_ends, samp_rate);
