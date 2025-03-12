@@ -1,4 +1,4 @@
-function [notes_max_Hz, notes_min_Hz, notes_FM, notes_resid,arcL,chordL] = msr_call_FM(call, sampling_rate, spec_resol, method, note_starts, note_ends, threshold, reset, INI_max);
+function [notes_max_Hz, notes_min_Hz, notes_FM, notes_resid,arcL,chordL] = msr_call_FM_arcL(call, sampling_rate, spec_resol, method, note_starts, note_ends, threshold, reset, INI_max);
 
 % function [note_max_Hz, note_min_Hz, notes_FM, note_resid] =
 % msr_call_FM(call, sampling_rate, spec_resol, method, note_starts, note_ends, threshold, reset, INI_max);
