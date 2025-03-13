@@ -1,5 +1,6 @@
 # steg_muscle_ablation
-Repository for data, scripts, and analysis of muscle ablation study in singing mice (Scotinomys teguina)
+Repository for data, scripts, and analysis of muscle ablation study in singing mice (Scotinomys teguina). Histological slide images can be found on figshare project: Cricothyroid Muscle Ablation in Alston's singing mouse, (Scotinomys teguina).
+
 
 Detecting songs in raw audio files, extracting songs, measuring song and notes variables are done using the following matlab scripts:
 
